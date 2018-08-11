@@ -28,6 +28,7 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{URL::asset('assets/css/main.css')}}" />
+		<link rel="icon" href="{{url('images/favicon.png')}}" type="image/x-icon" />
 	</head>
 	<body class="is-preload">
 
