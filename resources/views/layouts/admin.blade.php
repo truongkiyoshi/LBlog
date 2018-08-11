@@ -137,6 +137,7 @@
             <li><a href="{{URL::asset('admin/manage-post')}}"><i class="fa fa-circle-o"></i> Manage Post</a></li>
           </ul>
         </li>
+        <li><a href="{{URL::asset('admin/setting')}}"><i class="fa fa-circle-o text-red"></i> <span>Setting Site</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

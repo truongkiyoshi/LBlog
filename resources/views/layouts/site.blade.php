@@ -28,10 +28,6 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{URL::asset('assets/css/main.css')}}" />
-		<!-- Bootstrap 3.3.7 -->
-		  <link rel="stylesheet" href="{{URL::asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
-		  <!-- Font Awesome -->
-		  <link rel="stylesheet" href="{{URL::asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
 	</head>
 	<body class="is-preload">
 
@@ -73,15 +69,15 @@
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
-										<h3 class="icon fa-home"><span class="label">Address</span></h3><hr>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
 										{{$setting['address']}}
 									</li>
 									<li>
-										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3><hr>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
 										{{$setting['phone']}}
 									</li>
 									<li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3><hr>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
 										<a href="mailto:{{$setting['email']}}">{{$setting['email']}}</a>
 									</li>
 								</ul>
@@ -97,7 +93,7 @@
 						<li><a href="{{$setting['twitter']}}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="{{$setting['github']}}" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="{{$setting['facebook']}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="{{$setting['envelope']}}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="mailto:{{$setting['envelope']}}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; 2018</li><li>Design: <a href="https://facebook.com/truongvp97">AntKing</a></li>

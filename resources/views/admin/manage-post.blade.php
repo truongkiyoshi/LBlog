@@ -25,14 +25,14 @@
 	                    <th style="width: 250px">Title</th>
 	                    <th style="width: 350px">Describe</th>
 	                    <th style="width: 100px">Date</th>
-	                    <td style="width: 100px">Author</td>
+	                    <th style="width: 100px">Author</th>
 	                    <th>Chức năng</th>
 	                </tr>
 	                @foreach ($data as $post)
 		                <tr>
 		                	<td>{{$post->id}}</td>
 		                	<td>{{$post->title}}</td>
-		                	<td>{{substr( strip_tags($post->content), 0, 150)}}</td>
+		                	<td>{{html_entity_decode(substr( strip_tags($post->content), 0, 150))}}</td>
 		                	<td>{{$post->date_post}}</td>
 		                	<td>
 		                		{{
@@ -44,6 +44,7 @@
 		                	<td>
 		                		<button type="button" class="btn btn-warning"><a href="{{url('admin/manage-post/edit/'.$post->id)}}"><font color="white">Sửa</font></a></button>
 		                		<button type="button" class="btn btn-danger"><a href="{{url('admin/manage-post/delete/'.$post->id)}}"><font color="white">Xóa</font></a></button>
+		                		<button type="button" class="btn btn-success"><a href="{{url('tct/'.$post->slug)}}"><font color="white">Xem</font></a></button>
 		                	</td>
 		                </tr>
 	                @endforeach
